@@ -1,0 +1,40 @@
+{
+  "name": "hello-world-supabase-vscode-extension",
+  "displayName": "hello-world-supabase-vscode-extension",
+  "description": "A hello world vs code extension that uses supabase as backend service, created by Ish Kapoor.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "hello-world-supabase-vscode-extension.storeRandomNumber",
+        "title": "Store Random Number"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.92.0",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.4.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.2",
+    "supabase": "^1.191.3"
+  }
+}
